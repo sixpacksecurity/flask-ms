@@ -8,3 +8,6 @@ trufflehog_checks_api = "http://secret-service/"
 def hello_world():
     return "Hello from the ms1 service"
 
+@app.route("/<name>")
+def hello(name):
+    return f"Hello, {name}!"
